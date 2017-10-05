@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Train Schedule</title>
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+
+<div id="fullsiteContainer" class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">*The Hogwarts Express*</h1>
+        <h3 class="text-center">*How original. I know probably 10 other people did Hogwarts</h3>
+        <h4 class="text-center">I'm so tired...</h4>
+        <h5 class="text-center">I tried to be clever....too tired for original...</h5>
+        <h6 class="text-center">This took forever I'm so behind</h6>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover" id='trainSchedule'>
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Add Train</strong></h3>
+                </div>
+                <div class="panel-body">
+    
+                <form>
+                    <div class="form-group">
+                        <label for="">Train Name</label>
+                        <input type="text" class="form-control" id="trainNameInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Destination</label>
+                        <input type="text" class="form-control" id="destinationInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">First Train Time (HH:MM - military time)</label>
+                        <input type="text" class="form-control" id="trainInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequencyInput">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+
+<script type="text/javascript" src="C:\Users\SUNNY\Desktop\train schedule\javascript\apps.js"></script>
+
+</body>
+
+</html>
